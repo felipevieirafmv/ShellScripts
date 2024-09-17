@@ -1,8 +1,6 @@
-﻿using System.IO;
+﻿string path = Directory.GetCurrentDirectory();;
 
-string root = @"C:\Repositories\ShellScripts\";
-
-var files = from file in Directory.EnumerateFiles(root) select file;
+var files = from file in Directory.EnumerateFiles(path) select file;
 
 foreach (var file in files)
 {
